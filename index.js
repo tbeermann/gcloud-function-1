@@ -15,6 +15,6 @@ exports.adsDataExample = (req, res) => {
         //Attach Response data to the Configuration Object
         data = response;
         res.setHeader('Content-Type', 'application/json');
-        res.send(data);
+        res.send(JSON.stringify(data, null, 3));
     })
 }
